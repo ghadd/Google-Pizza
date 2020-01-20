@@ -18,3 +18,5 @@ public:
 	void display();
 	ULONG compute_max_appr_sum();
 };
+
+std::vector<std::vector<bool>> get_subset_matrix(std::vector<ULONG> set, ULONG n, ULONG sum);
