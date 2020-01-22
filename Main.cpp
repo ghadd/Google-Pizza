@@ -1,5 +1,4 @@
 #include <iostream>
-#include <numeric>
 #include "Input.h"
 
 int main() {
@@ -8,7 +7,7 @@ int main() {
 								"tests\\c_medium.in",
 								"tests\\d_quite_big.in",
 								"tests\\e_also_big.in"};
-	for (int i = 0; i < 3; i++) {
+	for (int i = 0; i < 5; i++) {
 		std::string filename = filenames[i];
 		std::fstream test(filename, std::ios_base::in);
 		if (!test.is_open()) {

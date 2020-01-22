@@ -4,6 +4,8 @@
 #include <vector>
 #include <map>
 #include <fstream>
+#include <chrono>
+#include <numeric>
 
 typedef unsigned long ULONG;
 
@@ -23,3 +25,4 @@ public:
 
 std::vector<std::vector<bool>> get_subset_matrix(std::vector<ULONG> set, ULONG n, ULONG sum, std::map<int, int>& ways);
 void write_file(std::string filename, std::vector<ULONG> set, std::vector<ULONG> selected);
+ULONG summed(std::vector<ULONG> arr);
